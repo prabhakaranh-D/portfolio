@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prabhakaran D - Fullstack Developer. View my portfolio, skills, and projects.">
+    <meta name="keywords" content="Prabhakaran D, fullstack Developer, Web Developer, Portfolio">
+    <title>Prabhakaran D | fullstack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">Prabhakaran D</span>
+            </div>
+            <nav>
+                <div class="togglebtn" id="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks" id="navlinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+
+        <div class="hero-content">
+            <div class="hero-pic-wrap">
+                <div class="hero-pic-ring"></div>
+                <div class="hero-pic">
+                    <img src="images/main_photo.jpg" alt="Prabhakaran D - Fullstack Developer">
+                </div>
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting">👋 Hello, I'm</p>
+                <h1 class="hero-name">Prabhakaran <span class="gradient-text">D</span></h1>
+                <h2 class="hero-role">I'm a <span class="typed-target"></span></h2>
+                <p class="hero-bio">
+                    Passionate fullstack developer crafting beautiful, responsive web
+                    experiences with clean code and modern technologies.
+                    Let's build something amazing together.
+                </p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary" id="download-cv">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                </div>
+                <div class="social-row">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number" data-target="25">0</span><span class="stat-suffix">+</span>
+                <p>Projects Done</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number" data-target="5">0</span><span class="stat-suffix">★</span>
+                <p>Average Rating</p>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-down-btn" aria-label="Scroll down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-tag">Get To Know Me</p>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-img-col reveal">
+                    <div class="about-img-wrapper">
+                        <img src="images/main_photo.jpg" alt="Prabhakaran D">
+                        <div class="about-img-border"></div>
+                    </div>
+                    <div class="about-badge">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <span>Fullstack</span>
+                            <strong>Developer</strong>
+                        </div>
+                    </div>
+                    <div class="about-exp-badge">
+                        <strong>3+</strong>
+                        <span>Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <h3>A passionate Fullstack Developer based in <span class="gradient-text">India 🇮🇳</span></h3>
+                    <p>
+                        I'm Prabhakaran D, a creative Fullstack developer with a strong eye for detail
+                        and a love for turning ideas into beautiful digital experiences. I specialize in
+                        building responsive, accessible, and performance-optimized web applications.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new design trends, contributing to
+                        open-source projects, or leveling up my skills in the ever-evolving world of tech.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fa-solid fa-user"></i>
+                            <div>
+                                <span>Name</span>
+                                <strong>Prabhakaran D</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Location</span>
+                                <strong>India</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <strong>prabhakaran@email.com</strong>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <span>Status</span>
+                                <strong class="available-badge">
+                                    <span class="pulse-dot"></span> Available for Work
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-tag">What I Know</p>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-bars reveal">
+                    <h3>Technical Proficiency</h3>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span><i class="fa-brands fa-html5"></i> HTML &amp; CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span><i class="fa-brands fa-react"></i> React.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="82"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span><i class="fa-brands fa-node-js"></i> Node.js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span><i class="fa-brands fa-python"></i> Python</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="65"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-tools reveal">
+                    <h3>Tools &amp; Technologies</h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <i class="fa-brands fa-html5" style="color:#e34f26"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-css3-alt" style="color:#1572b6"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-js" style="color:#f7df1e"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-react" style="color:#61dafb"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-node-js" style="color:#339933"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-python" style="color:#3776ab"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-git-alt" style="color:#f05032"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-github" style="color:#e5e5e5"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-figma" style="color:#f24e1e"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-solid fa-database" style="color:#00758f"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-solid fa-server" style="color:#47a248"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fa-brands fa-docker" style="color:#2496ed"></i>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <!-- UPDATE: Replace these placeholder projects with your real projects -->
+    <section id="projects" class="projects section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-tag">My Work</p>
+                <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="filter-tabs reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal" data-category="fullstack">
+                    <div class="project-img">
+                        <div class="project-thumb" style="background:linear-gradient(135deg,#007ced,#00d4ff)">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="proj-icon-btn" title="Live Demo" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="#" class="proj-icon-btn" title="GitHub" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">Full Stack</div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>A fully responsive online shopping platform with product filtering, cart management, and
+                            Stripe payment integration.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <div class="project-thumb" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="proj-icon-btn" title="Live Demo" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="#" class="proj-icon-btn" title="GitHub" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">Web App</div>
+                        <h3>Task Management App</h3>
+                        <p>A drag-and-drop Kanban board with real-time collaboration, deadlines, priority labels, and
+                            team assignments.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Firebase</span><span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <div class="project-thumb" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
+                            <i class="fa-solid fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="proj-icon-btn" title="Live Demo" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="#" class="proj-icon-btn" title="GitHub" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">Web App</div>
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather app with 7-day forecasts, hourly charts, geolocation, and animated weather
+                            condition icons.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>Weather API</span><span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="fullstack">
+                    <div class="project-img">
+                        <div class="project-thumb" style="background:linear-gradient(135deg,#10b981,#3b82f6)">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="proj-icon-btn" title="Live Demo" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="#" class="proj-icon-btn" title="GitHub" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">Full Stack</div>
+                        <h3>Real-Time Chat App</h3>
+                        <p>A full-stack chat application with chat rooms, private DMs, emoji reactions, and online
+                            status indicators.</p>
+                        <div class="project-tags">
+                            <span>Socket.io</span><span>Node.js</span><span>Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="ui">
+                    <div class="project-img">
+                        <div class="project-thumb" style="background:linear-gradient(135deg,#f97316,#eab308)">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="proj-icon-btn" title="Live Demo" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="#" class="proj-icon-btn" title="GitHub" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">UI/UX</div>
+                        <h3>Design System Kit</h3>
+                        <p>A comprehensive component library and design system with 50+ reusable components for rapid UI
+                            development.</p>
+                        <div class="project-tags">
+                            <span>Figma</span><span>React</span><span>Storybook</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <div class="project-thumb" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="proj-icon-btn" title="Live Demo" aria-label="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="#" class="proj-icon-btn" title="GitHub" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category-tag">Web App</div>
+                        <h3>Finance Tracker</h3>
+                        <p>Personal finance dashboard with expense tracking, budget goals, savings analysis, and
+                            interactive charts.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Chart.js</span><span>LocalStorage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <p class="section-tag">Get In Touch</p>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>
+                        Have a project in mind or want to hire me? I'm always open to discussing
+                        new projects, creative ideas, or opportunities to be part of your vision.
+                    </p>
+                    <div class="contact-cards">
+                        <div class="contact-info-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span>Email Me</span>
+                                <strong>prabhakaran.h.net@email.com</strong>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span>Call Me</span>
+                                <strong>+91 99656 85426</strong>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span>Location</span>
+                                <strong>Madurai, Tamil Nadu, India</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="from_name" name="from_name" placeholder=" " required>
+                                <label for="from_name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="reply_to" name="reply_to" placeholder=" " required>
+                                <label for="reply_to">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span class="btn-text">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </span>
+                            <span class="btn-loading" style="display:none">
+                                <i class="fa-solid fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                        <p class="form-message" id="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-icon">P</span>
+                <span>Prabhakaran D</span>
+            </div>
+            <p class="footer-tagline">Building the web, one pixel at a time ✨</p>
+            <div class="footer-social">
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2025 Prabhakaran D. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
