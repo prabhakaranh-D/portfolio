@@ -18,7 +18,11 @@ const EMAILJS_SERVICE_ID = 'service_XXXXXXX';    // Email Services → Service I
 const EMAILJS_TEMPLATE_ID = 'template_XXXXXXX';   // Email Templates → Template ID
 
 /* ─── 1. Initialize EmailJS ─────────────────────── */
-emailjs.init(EMAILJS_PUBLIC_KEY);
+try {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+} catch (e) {
+    console.warn('EmailJS initialization failed:', e);
+}
 
 /* ─── 2. Particle Canvas ─────────────────────────── */
 (function initParticles() {
@@ -103,14 +107,20 @@ emailjs.init(EMAILJS_PUBLIC_KEY);
 })();
 
 /* ─── 3. Typed.js ─────────────────────────────────── */
-new Typed('.typed-target', {
-    strings: ['Fullstack Developer', 'UX Designer', 'Web Developer', 'React Developer'],
-    typeSpeed: 70,
-    backSpeed: 45,
-    backDelay: 1800,
-    startDelay: 600,
-    loop: true,
-});
+try {
+    new Typed('.typed-target', {
+        strings: ['Fullstack Developer', 'UX Designer', 'Web Developer', 'React Developer'],
+        typeSpeed: 70,
+        backSpeed: 45,
+        backDelay: 1800,
+        startDelay: 600,
+        loop: true,
+    });
+} catch (e) {
+    console.warn('Typed.js initialization failed:', e);
+    const typedTarget = document.querySelector('.typed-target');
+    if (typedTarget) typedTarget.textContent = 'Fullstack Developer';
+}
 
 /* ─── 4. Sticky Navbar + Active Link ─────────────── */
 const navbar = document.getElementById('navbar');
