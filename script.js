@@ -77,13 +77,13 @@ try {
     function drawLines() {
         for (let i = 0; i < particles.length; i++) {
             for (let j = i + 1; j < particles.length; j++) {
-                const dx   = particles[i].x - particles[j].x;
-                const dy   = particles[i].y - particles[j].y;
+                const dx = particles[i].x - particles[j].x;
+                const dy = particles[i].y - particles[j].y;
                 const dist = Math.sqrt(dx * dx + dy * dy);
                 if (dist < 120) {
                     ctx.beginPath();
                     ctx.strokeStyle = `rgba(160,170,190,${0.12 * (1 - dist / 120)})`;
-                    ctx.lineWidth   = 0.5;
+                    ctx.lineWidth = 0.5;
                     ctx.moveTo(particles[i].x, particles[i].y);
                     ctx.lineTo(particles[j].x, particles[j].y);
                     ctx.stroke();
