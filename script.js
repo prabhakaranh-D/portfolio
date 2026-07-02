@@ -13,9 +13,9 @@
  * =====================================================
  */
 
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';    // Account → API Keys
-const EMAILJS_SERVICE_ID = 'service_XXXXXXX';    // Email Services → Service ID
-const EMAILJS_TEMPLATE_ID = 'template_XXXXXXX';   // Email Templates → Template ID
+const EMAILJS_PUBLIC_KEY = 'pqI8vUzWYHZV5fppp';    // Account → API Keys
+const EMAILJS_SERVICE_ID = 'service_uk74pa6';    // Email Services → Service ID
+const EMAILJS_TEMPLATE_ID = 'template_kri320w';   // Email Templates → Template ID
 
 /* ─── 1. Initialize EmailJS ─────────────────────── */
 try {
