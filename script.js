@@ -287,6 +287,10 @@ filterBtns.forEach(btn => {
     });
 });
 
+// Initialize filter on load
+const activeBtn = document.querySelector('.filter-btn.active');
+if (activeBtn) activeBtn.click();
+
 /* ─── 11. Back to Top Button ─────────────────────── */
 const backToTop = document.getElementById('back-to-top');
 
