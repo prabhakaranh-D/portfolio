@@ -638,6 +638,79 @@ nav { display: flex; align-items: center; }
 }
 
 /* ======================================
+   EXPERIENCE SECTION
+   ====================================== */
+.experience { background: var(--bg-primary); }
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+.timeline-item {
+    position: relative;
+    padding-bottom: 40px;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-dot {
+    position: absolute;
+    left: -37px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--gradient);
+    border: 3px solid var(--bg-primary);
+    box-shadow: 0 0 10px rgba(0, 124, 237, 0.4);
+}
+.timeline-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: var(--transition);
+}
+.timeline-content:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+.timeline-date {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(0, 124, 237, 0.1);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+.timeline-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+}
+.timeline-company {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.timeline-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* ======================================
    SKILLS SECTION
    ====================================== */
 .skills { background: var(--bg-primary); }
@@ -724,6 +797,36 @@ nav { display: flex; align-items: center; }
 }
 .tool-card i { font-size: 1.8rem; }
 .tool-card span { font-size: 0.75rem; color: var(--text-secondary); font-weight: 500; text-align: center; }
+
+/* Currently Learning */
+.currently-learning {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+}
+.skills-subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+.learning-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.learning-grid .tool-card {
+    min-width: 120px;
+}
+.dashed-card {
+    border: 1px dashed var(--border-hover);
+    background: transparent;
+}
+.dashed-card i {
+    color: var(--text-secondary) !important;
+}
 
 /* ======================================
    PROJECTS SECTION
